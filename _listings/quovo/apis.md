@@ -11,8 +11,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quov
 x-kinRank: "7"
 x-alexaRank: "391003"
 tags: Institutions
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/apis.md
 specificationVersion: "0.14"
 apis:
@@ -29,6 +29,94 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutions-get-openapi.md
+- name: Quovo API v3 - Request a new institution
+  x-api-slug: usersuser-idinstitution-requests-post
+  description: Requests a new financial institution for Quovo to retrieve data from.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/usersuser-idinstitution-requests-post-openapi.md
+- name: Quovo API v3 - Get a single institution
+  x-api-slug: institutionsinstitution-id-get
+  description: Provides information on a single Quovo-supported institution.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutionsinstitution-id-get-openapi.md
+- name: Quovo API v3 - Request a new institution
+  x-api-slug: usersuser-idinstitution-requests-post
+  description: Requests a new financial institution for Quovo to retrieve data from.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/usersuser-idinstitution-requests-post-openapi.md
+- name: Quovo API v3 - Get a single institution
+  x-api-slug: institutionsinstitution-id-get
+  description: Provides information on a single Quovo-supported institution.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutionsinstitution-id-get-openapi.md
+- name: Quovo API v3 - Get a single institution
+  x-api-slug: institutionsinstitution-id-get
+  description: Provides information on a single Quovo-supported institution.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutionsinstitution-id-get-openapi.md
+- name: Quovo API v3 - Get a single institution
+  x-api-slug: institutionsinstitution-id-get
+  description: Provides information on a single Quovo-supported institution.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutionsinstitution-id-get-openapi.md
+- name: Quovo API v3 - Get a single institution
+  x-api-slug: institutionsinstitution-id-get
+  description: Provides information on a single Quovo-supported institution.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/institutionsinstitution-id-get-openapi.md
+- name: Quovo API v3 - Request a new institution
+  x-api-slug: usersuser-idinstitution-requests-post
+  description: Requests a new financial institution for Quovo to retrieve data from.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg
+  humanURL: http://quovo.com
+  baseURL: https://example.com//
+  tags: SaaS, Technology, Enterprise, Financial Services, Financial, Market Data,
+    Profiles, General Data, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/usersuser-idinstitution-requests-post-openapi.md
 x-common:
 - type: x-blog-rss
   url: https://www.quovo.com/fintech-blog/feed/

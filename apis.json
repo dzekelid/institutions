@@ -1,0 +1,90 @@
+{
+	"name": "Streadata.io API Gallery - Institutions",
+	"description": "This is a repository of institutions APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/institutions.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://institutions.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Intrinio",
+			"x-api-slug": "intrinio",
+			"description": "Intelligent Data, On Demand. The financial data platform for developers, investors, students, and educators, with over 200 feeds including real-time, intraday, EOD, and international financial data available via REST API, WebSocket, CSV, Excel, and Goo...",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/intrinio-logo-data-intelligence-on-demand.png",
+			"humanURL": "http://www.intrinio.com",
+			"baseURL": "https:///",
+			"tags": "Institutions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/intrinio/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Quovo",
+			"x-api-slug": "quovo",
+			"description": "Quovo&rsquo;s API provides methods for retrieving data from financial institutions on behalf of clients, advisors, and other users. This documentation includes detailed explanations of API endpoints and common data definitions. Please note that this documentation does not list all API endpoints. Additionally, you may not have access to all of the listed endpoints depending on the services you&rsquo;ve purchased from Quovo.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28293-quovo.jpg",
+			"humanURL": "http://quovo.com",
+			"baseURL": "https://example.com//",
+			"tags": "Institutions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Open Science Framework",
+			"x-api-slug": "open-science-framework",
+			"description": "OSF provides free and open source project management support for researchers across the entire research lifecycle. As a collaboration tool, OSF helps researchers work on projects privately with a limited number of collaborators and make parts of their projects public, or make all the project publicly accessible for broader dissemination. As a workflow system, OSF enables connections to the many services researchers already use to streamline their process and increase efficiency. As a flexible repository, it can store and archive research data, protocols, and materials.",
+			"image": "",
+			"humanURL": "https://cos.io",
+			"baseURL": "https://test-api.osf.io//v2",
+			"tags": "Institutions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Yapily",
+			"x-api-slug": "yapily",
+			"description": "Yapily is how people connect to banks, easily! We are an API Only technology provider whose mission is to enable innovative products to connect to banks, empowering a new generation of financial services.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/yapily-logo.png",
+			"humanURL": "https://www.yapily.com",
+			"baseURL": "https://api.yapily.com:443//",
+			"tags": "Institutions",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Institutions",
+	"include": [
+		{
+			"name": "Intrinio",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/intrinio/apis.yaml"
+		},
+		{
+			"name": "Quovo",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/quovo/apis.yaml"
+		},
+		{
+			"name": "Open Science Framework",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/apis.yaml"
+		},
+		{
+			"name": "Yapily",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/apis.yaml"
+		}
+	]
+}

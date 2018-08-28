@@ -12,11 +12,49 @@ image: ""
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Institutions
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Open Science Framework - List all institutions
+  x-api-slug: institutions-get
+  description: |-
+    A paginated list of all verified institutions.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of 10 institutions. Each resource in the array is a separate institution object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+
+    This request should never return an error.
+    #### Filtering
+    You can optionally request that the response only include institutions that match your filters by utilizing the `filter` query parameter, e.g. https://api.osf.io/v2/institutions/?filter[id]=cos.
+
+    Institutions may be filtered by their `id`, `name`, and `auth_url`
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutions-get-openapi.md
+- name: Open Science Framework - Retrieve an institution
+  x-api-slug: institutionsinstitution-id-get
+  description: |-
+    Retrieves the details of an institution
+    ####Returns
+    Returns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-id-get-openapi.md
 - name: Open Science Framework - List all affiliated nodes
   x-api-slug: institutionsinstitution-idnodes-get
   description: |-
@@ -94,6 +132,72 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-openapi.md
+- name: Open Science Framework - List all institutions
+  x-api-slug: nodesnode-idinstitutions-get
+  description: |-
+    List of all institutions affiliated with this node.
+    ####Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of up to 10 affilited institutions. Each resource in the array is a separate institution object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/nodesnode-idinstitutions-get-openapi.md
+- name: Open Science Framework - List all institutions
+  x-api-slug: registrationsregistration-idinstitutions-get
+  description: |-
+    A paginated list of institutions affiliated with the registration.
+    ####Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of up to 10 affiliated institutions. Each resource in the array is a separate institution object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/registrationsregistration-idinstitutions-get-openapi.md
+- name: Open Science Framework - List all institutions
+  x-api-slug: usersuser-idinstitutions-get
+  description: |-
+    A paginated list of institutions that the user is affiliated with.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of 10 institutions. Each resource in the array is a complete institution object and contains the full representation of the institution, meaning additional requests to a institution's detail view are not necessary.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/usersuser-idinstitutions-get-openapi.md
+- name: Open Science Framework - Retrieve an institution
+  x-api-slug: institutionsinstitution-id-get
+  description: |-
+    Retrieves the details of an institution
+    ####Returns
+    Returns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-id-get-openapi.md
 - name: Open Science Framework - List all affiliated nodes
   x-api-slug: institutionsinstitution-idnodes-get
   description: |-
@@ -191,6 +295,21 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/get-openapi.md
+- name: Open Science Framework - Retrieve an institution
+  x-api-slug: institutionsinstitution-id-get
+  description: |-
+    Retrieves the details of an institution
+    ####Returns
+    Returns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-id-get-openapi.md
 - name: Open Science Framework - List all affiliated nodes
   x-api-slug: institutionsinstitution-idnodes-get
   description: |-
@@ -268,6 +387,118 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-openapi.md
+- name: Open Science Framework - Root
+  x-api-slug: get
+  description: |-
+    Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https://osf.io/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http://cos.io/).
+
+    #### Returns
+    A JSON object with `meta` and `links` keys.
+
+    The `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of the current user, if authentication credentials were provided in the request.
+
+    The `links` key contains links to the following entity collections: [addons](), [collections](), [institutions](#Institutions_institutions_list), [licenses](#Licenses_license_list), [metaschemas](), [nodes](#Nodes_nodes_list), [registrations](), [users](#Users_users_list)
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/get-openapi.md
+- name: Open Science Framework - List all affiliated users
+  x-api-slug: institutionsinstitution-idusers-get
+  description: |-
+    A paginated list of all users affiliated with an institution.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of 10 users. Each resource in the array is a separate users object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+    #### Filtering
+    You can optionally request that the response only include users that match your filters by utilizing the `filter` query parameter, e.g. https://api.osf.io/v2/institutions/cos/users?filter[family_name]=Nosek.
+
+    Users may be filtered by their `id`, `full_name`, `given_name`, `middle_names`, and `family_name`
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idusers-get-openapi.md
+- name: Open Science Framework - List all affiliated registrations
+  x-api-slug: institutionsinstitution-idregistrations-get
+  description: |-
+    A paginated list of all registrations affiliated with an institution.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of 10 registrations. Each resource in the array is a separate users object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+    #### Filtering
+    You can optionally request that the response only include registrations that match your filters by utilizing the `filter` query parameter, e.g. https://api.osf.io/v2/institutions/cos/registrations?filter[title]=science.
+
+    Registrations may be filtered by their  `id`, `title`, `description`, `public`, `tags`, `category`, `date_created`, `date_modified`, `root`, `parent`, `contributors`, and `preprint`
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idregistrations-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idregistrations-get-openapi.md
+- name: Open Science Framework - List all affiliated nodes
+  x-api-slug: institutionsinstitution-idnodes-get
+  description: |-
+    A paginated list of all nodes affiliated with an institution.
+    #### Versioning
+    As of version `2.2`, affiliated components (in addition to affiliated top-level projects) are returned from this endpoint.
+    #### Returns
+    Returns a JSON object containing `data` and `links` keys.
+
+    The `data` key contains an array of 10 nodes. Each resource in the array is a separate nodes object.
+
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+    #### Filtering
+    You can optionally request that the response only include nodes that match your filters by utilizing the `filter` query parameter, e.g. https://api.osf.io/v2/institutions/cos/nodes?filter[title]=science.
+
+    Nodes may be filtered by their `id`, `title`, `description`, `public`, `tags`, `category`, `date_created`, `date_modified`, `root`, `parent`, `contributors`, and `preprint`
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idnodes-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-idnodes-get-openapi.md
+- name: Open Science Framework - Retrieve an institution
+  x-api-slug: institutionsinstitution-id-get
+  description: |-
+    Retrieves the details of an institution
+    ####Returns
+    Returns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.
+
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
+  image: ""
+  humanURL: https://cos.io
+  baseURL: https://test-api.osf.io//v2
+  tags: Research, Science, API Provider, Profiles, General Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/open-science-framework/institutionsinstitution-id-get-openapi.md
 - name: Open Science Framework - Root
   x-api-slug: get
   description: |-

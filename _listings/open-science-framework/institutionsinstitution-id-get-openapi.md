@@ -3,16 +3,13 @@ swagger: "2.0"
 x-collection-name: Open Science Framework
 x-complete: 0
 info:
-  title: Open Science Framework Root
+  title: Open Science Framework Retrieve an institution
   description: |-
-    Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https://osf.io/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http://cos.io/).
+    Retrieves the details of an institution
+    ####Returns
+    Returns a JSON object with a `data` key containing the representation of the requested institution, if the request was successful.
 
-    #### Returns
-    A JSON object with `meta` and `links` keys.
-
-    The `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of the current user, if authentication credentials were provided in the request.
-
-    The `links` key contains links to the following entity collections: [addons](), [collections](), [institutions](#Institutions_institutions_list), [licenses](#Licenses_license_list), [metaschemas](), [nodes](#Nodes_nodes_list), [registrations](), [users](#Users_users_list)
+    If the request is unsuccessful, an `errors` key containing information about the failure will be returned. Refer to the [list of error codes](#Introduction_error_codes) to understand why this request may have failed.
   contact:
     name: OSF
     url: https://osf.io/support

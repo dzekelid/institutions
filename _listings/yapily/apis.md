@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "7167103"
 tags: Institutions
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/apis.md
 specificationVersion: "0.14"
 apis:
@@ -73,6 +73,30 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionidpersonalcurrentaccounts-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionidpersonalcurrentaccounts-get-openapi.md
+- name: Yapily API - Retrieves details of personal current accounts for an institution
+  x-api-slug: institutionsinstitutionidpersonalcurrentaccounts-get
+  description: Retrieves details of personal current accounts for an institution.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/yapily-logo.png
+  humanURL: https://www.yapily.com
+  baseURL: https://api.yapily.com:443//
+  tags: New, Postman, OpenAPI, Financial, Banking, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionidpersonalcurrentaccounts-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionidpersonalcurrentaccounts-get-openapi.md
+- name: Yapily API - Retrieves details of a specific institution available in Yapily
+  x-api-slug: institutionsinstitutionid-get
+  description: Retrieves details of a specific institution available in yapily.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/yapily-logo.png
+  humanURL: https://www.yapily.com
+  baseURL: https://api.yapily.com:443//
+  tags: New, Postman, OpenAPI, Financial, Banking, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/institutions/master/_listings/yapily/institutionsinstitutionid-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://yahoo.api.gallery.streamdata.io

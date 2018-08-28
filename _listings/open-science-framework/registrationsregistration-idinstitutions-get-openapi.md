@@ -3,16 +3,15 @@ swagger: "2.0"
 x-collection-name: Open Science Framework
 x-complete: 0
 info:
-  title: Open Science Framework Root
+  title: Open Science Framework List all institutions
   description: |-
-    Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https://osf.io/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http://cos.io/).
+    A paginated list of institutions affiliated with the registration.
+    ####Returns
+    Returns a JSON object containing `data` and `links` keys.
 
-    #### Returns
-    A JSON object with `meta` and `links` keys.
+    The `data` key contains an array of up to 10 affiliated institutions. Each resource in the array is a separate institution object.
 
-    The `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of the current user, if authentication credentials were provided in the request.
-
-    The `links` key contains links to the following entity collections: [addons](), [collections](), [institutions](#Institutions_institutions_list), [licenses](#Licenses_license_list), [metaschemas](), [nodes](#Nodes_nodes_list), [registrations](), [users](#Users_users_list)
+    The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
   contact:
     name: OSF
     url: https://osf.io/support
@@ -212,49 +211,6 @@ paths:
       - Registrations
       - Registration
       - Institutions
-  /users/{user_id}/institutions/:
-    get:
-      summary: List all institutions
-      description: |-
-        A paginated list of institutions that the user is affiliated with.
-        #### Returns
-        Returns a JSON object containing `data` and `links` keys.
-
-        The `data` key contains an array of 10 institutions. Each resource in the array is a complete institution object and contains the full representation of the institution, meaning additional requests to a institution's detail view are not necessary.
-
-        The `links` key contains a dictionary of links that can be used for [pagination](#Introduction_pagination).
-      operationId: users_institutions_list
-      x-api-path-slug: usersuser-idinstitutions-get
-      parameters:
-      - in: path
-        name: user_id
-        description: The unique identifier of the user
-      responses:
-        200:
-          description: OK
-      tags:
-      - Users
-      - User
-      - Institutions
-  /:
-    get:
-      summary: Root
-      description: |-
-        Welcome to the Open Science Framework API. With this API you can access users, projects, components, logs, and files from the [Open Science Framework](https://osf.io/). The Open Science Framework (OSF) is a free, open-source service maintained by the [Center for Open Science](http://cos.io/).
-
-        #### Returns
-        A JSON object with `meta` and `links` keys.
-
-        The `meta` key contains information such as a welcome message from the API, the specified version of the request, and the full representation of the current user, if authentication credentials were provided in the request.
-
-        The `links` key contains links to the following entity collections: [addons](), [collections](), [institutions](#Institutions_institutions_list), [licenses](#Licenses_license_list), [metaschemas](), [nodes](#Nodes_nodes_list), [registrations](), [users](#Users_users_list)
-      operationId: base_read
-      x-api-path-slug: get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Root
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
